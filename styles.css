@@ -1,0 +1,207 @@
+/************* your name: Balkaran Singh Jaswal 000929229
+
+INSTRUCTIONS:
+Comments starting with TO-DO have been included in this file to describe the needed styling: please translate these to the appropriate CSS declarations. 
+
+Comments starting with TO-DO may be left in for reference or removed entirely: all other comments should be left as-is for ease of review.
+
+You are discouraged from changing any provided CSS.
+
+***** colour palette: *****
+- mustard yellow (used for header, footer, and buttons): #E5AF42
+- cornflower blue (used for hover states): #4278e5
+
+*/
+
+
+/************* site defaults *************/
+body {
+    width: 950px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.flex {
+    display: flex;
+}
+
+/************* site-wide text styling *************/
+h1 {
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.fake-button {
+    background-color: #E5AF42;
+    text-align: center;
+    line-height: 3;
+    border: 1px solid #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+main a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+.fake-button:hover, .blue-hover:hover {
+    text-decoration: underline;
+    background-color: #4278e5;
+    color: #fff;
+    cursor: pointer;
+}
+
+/************* header/footer styling *************/
+header, footer {
+    background-color: #E5AF42;
+}
+
+header {
+    height: 150px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 25px 0 25px 25px;
+}
+
+header h1 {
+    flex-grow: 1;
+}
+
+body > * {
+    margin: 25px 0;
+}
+
+footer {
+    height: 60px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/************* index page *************/
+.index-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-page img {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.index-page h2 {
+    line-height: 1.5em;
+}
+
+.index-page p {
+    margin-bottom: 12px;
+}
+
+.index-page .fake-button {
+    width: 250px;
+    margin: 0 auto 150px;
+}
+
+/************* bookings page *************/
+.booking-page {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.day-selectors {
+    margin-bottom: 12px;
+}
+
+.day-selectors li {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.small-button, .day-selectors li {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.top-margin {
+    margin: 24px 0 12px;
+}
+
+.clear-days {
+    width: 200px;
+}
+
+.clicked {
+    background-color: #E5AF42;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************* contact page *************/
+.contact main {
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .labels {
+    width: 150px;
+    text-align: right;
+}
+
+.contact .inputs {
+    width: 300px;
+}
+
+.contact .labels, .contact .inputs {
+    margin: 0 12px;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact form input, .contact form textarea, .contact form button {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid #000;
+    margin-bottom: 24px;
+}
+
+.contact form button {
+    width: calc(100% - 2px); /* Subtracting the border width */
+}
+
+
